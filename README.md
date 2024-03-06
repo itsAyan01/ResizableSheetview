@@ -11,6 +11,9 @@ Some exciting features are follownig :-
 2. change background of sheet view with beautiful blur effect.
 3. set the max height for the sheet.
 
+# Integration
+## Swift Package Manager (recommended)
+
 ```
 dependencies: [
     .package(url: "https://github.com/itsAyan01/ResizableSheetview.git")

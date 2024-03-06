@@ -23,6 +23,10 @@ dependencies: [
     .package(url: "https://github.com/itsAyan01/ResizableSheetview.git")
 ]
 ```
+# Demo
+
+https://github.com/itsAyan01/ResizableSheetview/assets/136585796/8cb7fdd7-9985-41c6-b05b-1bf55a52895f
+
 
 # Usage
 

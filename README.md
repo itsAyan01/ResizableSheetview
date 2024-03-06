@@ -23,3 +23,38 @@ dependencies: [
     .package(url: "https://github.com/itsAyan01/ResizableSheetview.git")
 ]
 ```
+
+# Usage
+
+you can use the "showResizableSheet" modifier directly on your view. use the modifier on the most outer view of your View which covers the whole screen
+``` swift
+import ResizableSheetView
+
+struct ContentView: View {
+    
+    @State private var showSheet: Bool = false
+    
+    var body: some View {
+        ZStack {
+            Color.white.ignoresSafeArea()
+            
+            Button {
+                showSheet = true
+            } label: {
+                Text("Show Bottom Sheet")
+            }
+
+        }
+        .showResizableSheet(isPresented: $showSheet) {
+            VStack {
+                Button {
+                    dismissResizableSheet()
+                } label: {
+                    Text("Dismiss Sheet")
+                }
+            }
+            .frame(height: 250)
+        }
+    }
+}
+```

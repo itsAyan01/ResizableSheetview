@@ -62,7 +62,10 @@ struct ContentView: View {
     }
 }
 ```
-Sheet view with drag bar
+## Sheet view with drag bar
+
+![Screenshot 2024-03-06 at 5 34 10 PM](https://github.com/itsAyan01/ResizableSheetview/assets/136585796/5c89be59-a4fd-42aa-8cb6-10f67fc99af3)
+
 ``` swift
         .showResizableSheet(isPresented: $showSheet, showDragBar: true) {
             SheetView()

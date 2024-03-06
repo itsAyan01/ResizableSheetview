@@ -62,3 +62,33 @@ struct ContentView: View {
     }
 }
 ```
+Sheet view with drag bar
+``` swift
+        .showResizableSheet(isPresented: $showSheet, showDragBar: true) {
+            SheetView()
+        }
+```
+``` swift
+struct SheetView: View {
+    var body: some View {
+        VStack {
+            VStack {
+                Spacer()
+                
+                Button {
+                    dismissResizableSheet()
+                } label: {
+                    Text("Dismiss Sheet")
+                }
+                
+                Spacer()
+            }
+        }
+    }
+}
+```
+## Dismiss Sheet
+you can dismiss sheet from your view by this function, direct call this function on any tap or inside a button
+``` swift
+dismissResizableSheet()
+```

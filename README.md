@@ -1,4 +1,4 @@
-# ReSizableSheet View in SwiftUI
+# ReSizableSheet - Modal View in SwiftUI
 
 ## A simple half sheet view which will adjust it's height according to the view paased to it.
 

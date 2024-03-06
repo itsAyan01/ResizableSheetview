@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public func dismissCustomSheet() {
+public func dismissResizableSheet() {
     NotificationCenter.default.post(name: .init(rawValue: NotificationKeys.dismissSheetKey), object: nil)
 }
 
@@ -115,6 +115,8 @@ extension ResizableSheetView {
     private var dismissButtonView: some View {
         if showCancelButton {
             HStack {
+                Spacer()
+                
                 Button {
                     dismissSheet()
                 } label: {
@@ -123,8 +125,6 @@ extension ResizableSheetView {
                         .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
-                
-                Spacer()
             }
         } else if showCancelButton == false && showDragBar {
             HStack {

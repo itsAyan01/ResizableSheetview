@@ -121,6 +121,7 @@ extension ResizableSheetView {
                     dismissSheet()
                 } label: {
                     cancelButtonImage
+                        .foregroundStyle(Color.gray)
                         .padding(20)
                         .contentShape(Rectangle())
                 }

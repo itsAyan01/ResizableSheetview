@@ -89,14 +89,14 @@ struct SheetView: View {
         }
     }
 }
-
+```
 ## Show sheet with transparent blur background
 
 ![Screenshot 2024-03-06 at 5 47 35 PM](https://github.com/itsAyan01/ResizableSheetview/assets/136585796/d5f718c4-fdae-4bf3-a65f-acee7952204f)
 
 ![Screenshot 2024-03-06 at 5 47 47 PM](https://github.com/itsAyan01/ResizableSheetview/assets/136585796/e2676a6d-d41d-446e-bfb4-2a6b83a987d9)
 
-```
+``` swift
             .showResizableSheet(isPresented: $showSheet,
                                 withoutRoundedCorners: true,
                                 showDragBar: true,
@@ -106,7 +106,7 @@ struct SheetView: View {
             }
 ```
 
-```
+
 ## Dismiss Sheet
 you can dismiss sheet from your view by this function, direct call this function on any tap or inside a button
 ``` swift
